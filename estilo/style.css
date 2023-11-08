@@ -1,11 +1,26 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2? family= Passion+One & display=swap');
-@import
-url('https://fonts.googleapis.com/css2?family= Sriracha & display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Noto+Serif+Display&display=swap');
+@font-face {
+    font-family: halimun ;
+    src: url(../halimun.ttf) format(opentype);
+}
+
 :root{
---fonte1: verdana, geneva, tahoma, san-serif;
---fonte2: 'passion one', cursive;
---fonte3: 'sriracha', cursive;
+--fonte1: 'Exibição Noto Serif', serif;
+--fonte2: halimun, cursive;
+--fonte3:  font-family: 'Quicksand', sans-serif;;
+
+--background1: black;
+--background2: white;
+--background3: #004AAD;
+--color1: black;
+--color2: white;
+--color3: #004AAD;
+--color4: #FFBD59;
+
 }
 *{
 margin: 0px;
@@ -15,35 +30,25 @@ font-size: 1em;
 
 html, body{
     min-height: 100vh;
-    background-color: darkgray;
+    background-color: var(--background3);
     font-family: var(--fonte1);
 }
 header{
-background-color: black;
-color:white;
+background-color: var(--background3);
+color: var(--color4);
 text-align: center;
-
+height: 50px;
+padding: 10px;
+font-family: var(--fonte2);
 }
-header > h1{
+header nav a{
     padding: 50px;
-    font-variant: small-caps;
     font-family: var(--fonte2);
-    font-size: 10vw;
+    color: var(--color4);
+    font-size: 25px;
 }
-header > p{ 
-    padding-bottom: 50px;
-}
-head a, footer a{
-    color:white;
-    text-decoration: none;
-    font-weight: bolder;
-}
-header a:hover, footer a:hover{
-    text-decoration: underline;
-}
+
 section{
-    padding-top: 10vh;
-    padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
     font-family: var(--fonte3);
@@ -51,8 +56,38 @@ section{
 }
 section.normal{
     background-color: white;
-    color: black}
-
+    color: black;
+    height: 100vh;
+}
+#inicio1{
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        position: relative;
+        }
+#titulo{
+    font-size: 100px;
+}
+#titulo2 {
+    font-size: 50px;
+}
+#quemsoueu {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+#quemsoueu p {
+    font-family: var(--fonte3);
+    font-size: 1em;
+    line-height: 1em;
+    text-indent: 3em;
+    padding: 10px;
+    text-align: justify;
+    
+}
+section.normal h1 {
+    font-family: var(--fonte3);
+    font-size: 60px;
+}
 section.imagem{ 
     background-color: rgb(51, 51, 51);
     color: white;
@@ -73,7 +108,17 @@ section.imagem > p{
 section#img01{background-image: url('../imagens/background001.jpg');
 background-position: right center;}
 
-section#img02{background-image: url('../imagens/background002.jpg');}
+section#img02{background-image: url('../imagens/logo_azul.png');
+
+}
+.a1 {
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    position: relative;
+
+
+}
 
 footer{
     background-color: black;
