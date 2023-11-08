@@ -75,6 +75,9 @@ section.normal{
     border-top: 1px solid;
     border-bottom: 1px solid;
 }
+#quemsoueu h1{
+    text-align: center;
+}
 #quemsoueu p {
     font-family: var(--fonte3);
     font-size: 1em;
@@ -82,8 +85,8 @@ section.normal{
     text-indent: 3em;
     padding: 10px;
     text-align: justify;
-    
 }
+
 section.normal h1 {
     font-family: var(--fonte3);
     font-size: 60px;
@@ -108,20 +111,30 @@ section.imagem > p{
 section#img01{background-image: url('../imagens/background001.jpg');
 background-position: right center;}
 
-section#img02{background-image: url('../imagens/logo_azul.png');
-
+section#dados h1 {
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 95vw;
+}
+section#dados{
+    background: var(--background3);
+height: 100vh;
+color: var(--color4);
+    line-height: 1.3em;
 }
 .a1 {
     align-items: center;
     justify-content: space-between;
     gap: 50px;
     position: relative;
-
-
 }
 
+#galery {
+    text-align: center;
+}
 footer{
-    background-color: black;
+   background: rgba(101, 131, 170, 0.5);
     color: white;
     text-align: center;
     padding: 10px;
